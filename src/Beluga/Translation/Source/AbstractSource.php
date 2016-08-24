@@ -2,10 +2,10 @@
 /**
  * @author         SagittariusX <unikado+sag@gmail.com>
  * @copyright  (c) 2016, SagittariusX
- * @package        Beluga\Translation\Source
+ * @package        Beluga
  * @since          2016-08-22
- * @subpackage     …
- * @version        0.1.0
+ * @subpackage     Translation\Source
+ * @version        0.1.1
  */
 
 namespace Beluga\Translation\Source;

@@ -5,7 +5,7 @@
  * @package        Beluga
  * @since          2016-08-22
  * @subpackage     Translation\Source
- * @version        0.1.0
+ * @version        0.1.1
  */
 
 

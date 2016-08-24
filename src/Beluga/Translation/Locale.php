@@ -7,7 +7,7 @@
  * @package        Beluga
  * @since          2016-08-21
  * @subpackage     Translation
- * @version        0.1.0
+ * @version        0.1.1
  */
 
 
@@ -115,13 +115,13 @@ final class Locale extends ExplicitGetter
     * @param  string $charset  The optional charset (e.g. 'UTF-8')
     * @since  v0.1
     */
-   public function __construct( string $language, string $country, string $charset = null )
+   public function __construct( string $language, string $country = null, string $charset = null )
    {
 
       // Init all class fields
       $this->_language = $language;
-      $this->_country  = $country;
-      $this->_charset  = $charset;
+      $this->_country  = $country ?? '';
+      $this->_charset  = $charset ?? '';
 
       // Init the array to store some usable locales
       $locales = [];
@@ -647,7 +647,7 @@ final class Locale extends ExplicitGetter
             return $refLocale;
          }
 
-         if ( Locale::TryParseArray( $refLocale, $_SESSION, $acceptedRequestParams ) )
+         if ( isset( $_SESSION ) && Locale::TryParseArray( $refLocale, $_SESSION, $acceptedRequestParams ) )
          {
             return $refLocale;
          }
