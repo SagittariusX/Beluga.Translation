@@ -14,7 +14,7 @@ or inside the `composer.json`:
 
 ```json
    "require": {
-      "sagittariusx/beluga.translation": "^0.1.0"
+      "sagittariusx/beluga.translation": "^0.1.1"
    },
 ```
 
